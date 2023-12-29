@@ -29,5 +29,20 @@ class Program
         person1.Address = address;
 
         Console.WriteLine(person1);
+
+
+        Person person2 = new Person 
+        {
+            FirstName = "Olimova",
+            LastName = "Parvina",
+            Address = new Address
+            {
+                Country = "Russia",
+                City = "Moscow",
+                Region = "RF",
+            }
+        };
+
+        Console.WriteLine($"{person2}");
     }
 }
