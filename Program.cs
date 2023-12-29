@@ -17,18 +17,16 @@ class Program
             Age = 7,
             Name = "Murzik",
         };
-
         Person person1 = new Person();
         person1.LastName = "Amir";
-        person1.FirsName = "Olimov";
+        person1.FirstName = "Olimov";
 
-        Adress adress = new Adress();
+        Address address = new Address();
+        address.Country = "TJS";
+        address.Region = "Sugd";
+        address.City = "Khudjand";
 
-        adress.Country = "TJS";
-        adress.Region = "Sugd";
-        adress.City = "Khudjand";
-
-        person1.Adress = adress;
+        person1.Address = address;
 
         Console.WriteLine(person1);
     }
